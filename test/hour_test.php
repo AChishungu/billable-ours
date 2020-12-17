@@ -7,10 +7,10 @@ require_once 'simpletest/web_tester.php';
 class HoursForm extends WebTestCase {
 
 	  function testCorrectdata() {
-		$this->get(VIRTUAL_PATH . '/hours.php');
+		$this->get(VIRTUAL_PATH . '/hour.php');
 		$this->assertResponse(200);
 
-    $this->setField("hours", "1.5");
+    $this->setField("hour", "1.5");
 		$this->setField("rate", "50");
 		$this->clickSubmit("Show Pay");
 
